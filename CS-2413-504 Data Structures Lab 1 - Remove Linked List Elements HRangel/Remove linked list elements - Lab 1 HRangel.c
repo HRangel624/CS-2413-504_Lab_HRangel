@@ -1,4 +1,4 @@
-//define NULL
+//define NULL in VSC
 #include <stddef.h>
  
  // Definition for singly-linked list.
