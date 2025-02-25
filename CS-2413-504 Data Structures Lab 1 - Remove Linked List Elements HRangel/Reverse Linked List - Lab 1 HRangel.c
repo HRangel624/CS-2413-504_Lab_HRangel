@@ -8,5 +8,13 @@
  };
  
 struct ListNode* reverseList(struct ListNode* head) {
+        struct ListNode* rev = NULL;
     
+    while(head){
+        struct ListNode* ptr = head->next;
+        head->next = rev;
+        rev = head;
+        head = ptr;
+    }
+    return rev;
 }
